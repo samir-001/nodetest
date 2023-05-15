@@ -1,0 +1,14 @@
+<%- include('includes/head') %>
+<%- include('includes/nav') %>
+
+<% if(!prods) {  %>
+    <div class="container">
+        <div>no data found</div>
+    </div>
+    <% } else{ %>
+        <% for(var i=0; i < prods.length; i++) { %>
+
+            <div class="container" ><%= prods[i] %></div>
+        <% } } %>
+
+<%- include('includes/footer') %>
